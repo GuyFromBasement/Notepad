@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Notepad</class>
+ <widget class="QMainWindow" name="Notepad">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1045</width>
+    <height>531</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Notepad</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QWidget" name="verticalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>-1</x>
+      <y>-1</y>
+      <width>1051</width>
+      <height>461</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QTextEdit" name="textEdit"/>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionNowy"/>
+   <addaction name="actionZapisz_jako"/>
+   <addaction name="actionCzerwony"/>
+   <addaction name="actionZielony"/>
+   <addaction name="actionNiebierski"/>
+   <addaction name="actionStandard"/>
+   <addaction name="actionWiecej_kolorow"/>
+   <addaction name="actionCzcionka"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1045</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuPlik">
+    <property name="title">
+     <string>Plik</string>
+    </property>
+    <addaction name="actionNowy"/>
+    <addaction name="actionOtworz"/>
+    <addaction name="actionZapisz_jako"/>
+    <addaction name="actionWyjd"/>
+   </widget>
+   <widget class="QMenu" name="menuEdytuj">
+    <property name="title">
+     <string>Edytuj</string>
+    </property>
+    <addaction name="actionCofnij"/>
+    <addaction name="actionPrzywr"/>
+    <addaction name="actionKopiuj"/>
+    <addaction name="actionWklej"/>
+    <addaction name="actionWytnij"/>
+   </widget>
+   <addaction name="menuPlik"/>
+   <addaction name="menuEdytuj"/>
+  </widget>
+  <action name="actionOtworz">
+   <property name="icon">
+    <iconset>
+     <normaloff>../Res/icons/Open.bmp</normaloff>../Res/icons/Open.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>Otwórz</string>
+   </property>
+  </action>
+  <action name="actionZapisz_jako">
+   <property name="icon">
+    <iconset>
+     <normaloff>../Res/icons/Save.bmp</normaloff>../Res/icons/Save.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>Zapisz jako</string>
+   </property>
+  </action>
+  <action name="actionWyjd">
+   <property name="text">
+    <string>Wyjdź</string>
+   </property>
+  </action>
+  <action name="actionNowy">
+   <property name="icon">
+    <iconset>
+     <normaloff>../Res/icons/New.bmp</normaloff>../Res/icons/New.bmp</iconset>
+   </property>
+   <property name="text">
+    <string>Nowy</string>
+   </property>
+  </action>
+  <action name="actionCofnij">
+   <property name="text">
+    <string>Cofnij</string>
+   </property>
+  </action>
+  <action name="actionPrzywr">
+   <property name="text">
+    <string>Przywróć</string>
+   </property>
+  </action>
+  <action name="actionWklej">
+   <property name="text">
+    <string>Wklej</string>
+   </property>
+  </action>
+  <action name="actionKopiuj">
+   <property name="text">
+    <string>Kopiuj</string>
+   </property>
+  </action>
+  <action name="actionWytnij">
+   <property name="text">
+    <string>Wytnij</string>
+   </property>
+  </action>
+  <action name="actionCzerwony">
+   <property name="icon">
+    <iconset>
+     <normaloff>../Res/icons/red.png</normaloff>../Res/icons/red.png</iconset>
+   </property>
+   <property name="text">
+    <string>Czerwony</string>
+   </property>
+  </action>
+  <action name="actionNiebierski">
+   <property name="icon">
+    <iconset>
+     <normaloff>../Res/icons/blue.png</normaloff>../Res/icons/blue.png</iconset>
+   </property>
+   <property name="text">
+    <string>Niebierski</string>
+   </property>
+  </action>
+  <action name="actionZielony">
+   <property name="icon">
+    <iconset>
+     <normaloff>../Res/icons/green.png</normaloff>../Res/icons/green.png</iconset>
+   </property>
+   <property name="text">
+    <string>Zielony</string>
+   </property>
+  </action>
+  <action name="actionStandard">
+   <property name="icon">
+    <iconset>
+     <normaloff>../Res/icons/black.png</normaloff>../Res/icons/black.png</iconset>
+   </property>
+   <property name="text">
+    <string>Standard</string>
+   </property>
+  </action>
+  <action name="actionWiecej_kolorow">
+   <property name="icon">
+    <iconset>
+     <normaloff>../Res/icons/rainbow.png</normaloff>../Res/icons/rainbow.png</iconset>
+   </property>
+   <property name="text">
+    <string>Więcej kolorów</string>
+   </property>
+  </action>
+  <action name="actionCzcionka">
+   <property name="icon">
+    <iconset>
+     <normaloff>../Res/icons/font.png</normaloff>../Res/icons/font.png</iconset>
+   </property>
+   <property name="text">
+    <string>Czcionka</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
